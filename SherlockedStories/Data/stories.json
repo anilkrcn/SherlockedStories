@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "title": "The Forgotten Island",
+        "hint": "Search for the map under the old tree.",
+        "solution": "The treasure is buried under the marked tree.",
+        "difficulty": 1,
+        "isSolved": false
+    },
+    {
+        "id": 2,
+        "title": "The Haunted Mansion",
+        "hint": "Find the hidden key in the library.",
+        "solution": "The key is inside the hollow book.",
+        "difficulty": 2,
+        "isSolved": false
+    }
+]
+
