@@ -1,19 +1,52 @@
 [
     {
-        "id": 1,
-        "title": "The Forgotten Island",
-        "hint": "Search for the map under the old tree.",
-        "solution": "The treasure is buried under the marked tree.",
+        "id": 7,
+        "title": "Sahipsiz Kolye",
+        "hint": "Kadın sahilde bir kolye bulur ve boynuna takar.",
+        "solution": "Kadın, yıllar önce kaybolan kızının son hediye ettiği kolyeyi fark eder. Kolye, kızının ölümünden sonra durmuş ve yıllarca kadının hatırasını taşıyan tek şey olmuştur. Kolye kadının boynuna takıldığında, kaybolan kızını ve yaşadığı acıyı hatırlayarak derin bir duygusal çöküş yaşar. Kolyenin anlamı kadına ölümün acısını tekrar hatırlatmış ve o an kadının duygusal sınırlarını aşarak ona şiddetli bir şekilde etki etmiştir.",
         "difficulty": 1,
         "isSolved": false
     },
     {
-        "id": 2,
-        "title": "The Haunted Mansion",
-        "hint": "Find the hidden key in the library.",
-        "solution": "The key is inside the hollow book.",
+        "id": 8,
+        "title": "Kırık Sandalye",
+        "hint": "Adam bir sandalyenin kırık bacağını fark eder.",
+        "solution": "Adam, yıllar önce işlenen bir cinayetle ilişkilendirilen bir sandalye bulur. Sandalyenin kırık bacağı, cinayet mahallinde kullanılan eşyadır. Cinayet sırasında kurban, sandalyenin bacağına sert bir şekilde vurulmuş ve bu olay cinayetin izlerini örtbas etmeye çalışan birisi tarafından gizlenmiştir. Adam, bu kırık bacak izini gördüğünde, yıllar önce kaybolan birinin ölümünün ardındaki gizemi çözer ve eski bir olayı gün yüzüne çıkarır.",
+        "difficulty": 1,
+        "isSolved": false
+    },
+    {
+        "id": 9,
+        "title": "Sessiz Telefon",
+        "hint": "Bir kadın telefonu açmadan dışarı fırlar.",
+        "solution": "Kadın, yıllardır kaybolan kardeşine ait bir telefon numarasını tanır. Fakat bu telefon aramasının gerisinde büyük bir tehdit yatmaktadır. Kardeşi, ölüm tehlikesi altında ve gizlice telefon kullanarak yardım istemektedir. Ancak, kardeşi o kadar korkmuş ve tehdit edilmiş ki, doğrudan arama yapamıyor. Kadın, telefonun çaldığını duyduğunda hemen dışarı fırlar çünkü sadece telefona cevap vererek hayatını riske atmak istememektedir. Bu arama, kadının yalnız olmadığını ve kardeşinin tehlikede olduğunu fark etmesine yol açar.",
         "difficulty": 2,
+        "isSolved": false
+    },
+    {
+        "id": 10,
+        "title": "Mühürlü Mektup",
+        "hint": "Adam mühürlü bir mektup bulur ve hemen işini bırakır.",
+        "solution": "Adam, yıllar önce işlediği bir suçu itiraf eden mühürlü bir mektup bulur. Mektup, geçmişteki bir olayın karanlık taraflarını açığa çıkarır. Adam, mektubu bulduğunda, başına gelebilecek felaketten endişelenir ve işini bırakır. Mektup, eski bir suçlunun itirafıdır ve şantaj yapma amacı taşır. Adamın korkusu, zamanla mektubun gizemiyle birleşerek onu daha da derin bir paniğe sürükler.",
+        "difficulty": 2,
+        "isSolved": false
+    },
+    {
+        "id": 11,
+        "title": "Çarpan Kapı",
+        "hint": "Rüzgarın çarptığı kapı sesi duyan adam evden kaçmaya başlar.",
+        "solution": "Kapı sesinin yankısı, adamın geçmişteki bir travmasını tetikler. Adam, yıllar önce yaşadığı bir hırsızlık olayını hatırlar ve hırsızın geri dönüp dönmediğini sorgular. Hırsızlık sırasında duyduğu kapı sesi, o dönemin korku ve kaosunu tekrar yaşamasına neden olur. Adam, olayın tekrar yaşanmasından korkarak hemen evden kaçar, ama aslında evde hiç kimse yoktur. Kapı sesinin gerisinde yalnızca eski bir korku yatar.",
+        "difficulty": 3,
+        "isSolved": false
+    },
+    {
+        "id": 12,
+        "title": "Kırık Saat",
+        "hint": "Bir adam yıllar sonra kırık bir saati bulur ve ağlamaya başlar.",
+        "solution": "Adam, kaybolan kızının anısına sahip tek şey olan bir saati bulur. Saat, kızının ölümünden sonra durmuş ve adam onu yıllarca el değmeden saklamıştır. Saatin tekrar çalışmaya başlaması, adama kızının hayatta olabileceği umudunu verir. Ancak, adam bu saatin hayalini kurduğu kurtuluşun sadece bir hayal olduğunu fark eder ve derin bir duygusal çözülüş yaşar. Saatin çalışması, kaybolan kızının hatıralarını ve kaybını tekrar canlandırarak adamı duygusal olarak kırar.",
+        "difficulty": 3,
         "isSolved": false
     }
 ]
+
 

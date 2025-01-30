@@ -29,9 +29,9 @@ struct HomeScreen: View {
                 AppBarView()
                     .padding(.bottom)
                 VStack{
-                    DifficultySections(diff: "Easy", color: "SherlockYellow")
-                    DifficultySections(diff: "Medium", color: "SherlockGray")
-                    DifficultySections(diff: "Hard", color: "SherlockLightBrown")
+                    DifficultySections(diff: "Easy", color: "SherlockYellow", diffScore: 1)
+                    DifficultySections(diff: "Medium", color: "SherlockGray", diffScore: 2)
+                    DifficultySections(diff: "Hard", color: "SherlockLightBrown", diffScore: 3)
                     
                 }
                 Spacer()
@@ -76,8 +76,9 @@ struct DifficultySections: View {
     let font = "BebasNeue-Regular"
     let diff: String?
     let color: String?
+    let diffScore: Int?
     var body: some View {
-        NavigationLink(destination: StoriesScreen(difficulty: diff, color: color)){
+        NavigationLink(destination: StoriesScreen(difficulty: diff, color: color, diffScore: diffScore)){
             Text(diff!)
                 .frame(width: 150, height: 150)
                 .font(Font.custom(font, size: 35))

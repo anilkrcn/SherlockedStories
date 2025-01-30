@@ -10,10 +10,11 @@ import SwiftUI
 struct StoryCard: View {
     var story = StoryModel()
     var onSolve: () -> Void
+    var color: String?
     var body: some View {
         ZStack{
             Rectangle()
-                .fill(Color("SherlockYellow"))
+                .fill(Color(color!))
                 .frame(width: 300, height: 450)
                 .cornerRadius(20.0)
                 .padding()
@@ -28,16 +29,19 @@ struct StoryCard: View {
                 HStack {
                     Text("İpucu:  ")
                         .fontWeight(.bold)
+                        .font(.system(size: 15))
                     + Text(story.hint!)
                         .fontWeight(.regular)
+                        .font(.system(size: 15))
                 }.padding()
                 Spacer()
                 Button("Çözüm"){
                     print("Çözüm Butona tıklandı")
                     onSolve()
                     
-                }.frame(width: 100, height: 50).background(Color("SherlockLightBrown")).foregroundColor(Color("BrandWhite"))
+                }.frame(width: 100, height: 50).foregroundColor(Color("BrandWhite"))
                     .font(Font.custom("BebasNeue-Regular", size: 25))
+                    .border(Color("BrandBlack"), width: 2)
                     .cornerRadius(10.0)
                     .padding()
             }.frame(maxWidth: 300, maxHeight: 450, alignment: .top)
@@ -48,10 +52,11 @@ struct StoryCard: View {
 struct StoryCardBackView: View{
     var story = StoryModel()
     var onBack: () -> Void
+    var color: String?
     var body: some View {
             ZStack{
                 Rectangle()
-                    .fill(Color("SherlockYellow"))
+                    .fill(Color(color!))
                     .frame(width: 300, height: 450)
                     .cornerRadius(20.0)
                     .padding()
@@ -66,15 +71,18 @@ struct StoryCardBackView: View{
                     HStack {
                         Text("Çözüm:  ")
                             .fontWeight(.bold)
+                            .font(.system(size: 13))
                         + Text(story.solution!)
                             .fontWeight(.regular)
+                            .font(.system(size: 13))
                     }.padding()
                     Spacer()
                     Button("Geri Dön"){
                         print("Geri Dön tıklandı")
                         onBack()
-                    }.frame(width: 100, height: 50).background(Color("SherlockLightBrown")).foregroundColor(Color("BrandWhite"))
+                    }.frame(width: 100, height: 50).foregroundColor(Color("BrandWhite"))
                         .font(Font.custom("BebasNeue-Regular", size: 25))
+                        .border(Color("BrandBlack"), width: 2)
                         .cornerRadius(10.0)
                         .padding()
                     

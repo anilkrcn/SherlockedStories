@@ -24,6 +24,18 @@ class StoryDetailViewModel: ObservableObject {
         }
     }
     
+    func storiesByDifficulty(diff: Int){
+        do{
+            let fetchRequest = StoryModel.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "difficulty == %d", diff)
+            let list = try context.fetch(fetchRequest)
+            
+            stories = list
+        }catch{
+            print(error.localizedDescription)
+        }
+    }
+    
     
 }
 

@@ -6,6 +6,7 @@ struct StoryDetailScreen: View {
     @ObservedObject var viewModel = StoryDetailViewModel()
     @State var rotationAngle = 0.0
     var storyModel = StoryModel()
+    var color: String?
     var body: some View {
         ZStack{
             Color("SherlockBrown").ignoresSafeArea()
@@ -28,7 +29,7 @@ struct StoryDetailScreen: View {
                                 rotationAngle -= 180 // Geri dönüş
                                 isFlipped.toggle()
                             }
-                        })
+                        }, color: color!)
                         .opacity(rotationAngle > 90 ? 1 : 0)
                         .scaleEffect(x: -1)
                     }else{
@@ -37,7 +38,7 @@ struct StoryDetailScreen: View {
                                 rotationAngle += 180 // Geri dönüş
                                 isFlipped.toggle()
                             }
-                        })
+                        }, color: color!)
                         .opacity(rotationAngle < 90 ? 1 : 0)
                     }
                 }.rotation3DEffect(
