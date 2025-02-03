@@ -41,6 +41,7 @@ struct HomeScreen: View {
                 //viewModel.save(title: "Gabar", hint: "Bu bir ipucudur dostum")
                 //printDatabasePath()
                 checkAndPreloadData()
+                printDatabasePath()
             }
     }
     }

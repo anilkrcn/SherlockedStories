@@ -22,12 +22,14 @@ struct StoriesScreen: View {
                     ScrollView{
                         VStack{
                             ForEach(0..<viewModel.stories.count/2, id: \.self){index in
+                                let firstTitleCard = viewModel.stories[index * 2]
+                                let secondTitleCard = viewModel.stories[(index * 2) + 1]
                                 HStack{
-                                    NavigationLink(destination: StoryDetailScreen(storyModel: viewModel.stories[index * 2], color: color!)){
-                                        StoryTitleCard(color: color!, font: font, title: viewModel.stories[index * 2].title!)
+                                    NavigationLink(destination: StoryDetailScreen(storyModel: firstTitleCard, color: color!)){
+                                        StoryTitleCard(color: color!, font: font, title: firstTitleCard.title!, isLocked: firstTitleCard.isLocked)
                                     }
-                                    NavigationLink(destination: StoryDetailScreen(storyModel: viewModel.stories[(index * 2) + 1], color: color!)){
-                                        StoryTitleCard(color: color!, font: font, title: viewModel.stories[(index * 2) + 1].title!)
+                                    NavigationLink(destination: StoryDetailScreen(storyModel: secondTitleCard, color: color!)){
+                                        StoryTitleCard(color: color!, font: font, title: secondTitleCard.title!, isLocked: secondTitleCard.isLocked)
                                     }
                                 }
                             }

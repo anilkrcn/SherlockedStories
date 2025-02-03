@@ -1,51 +1,138 @@
 [
     {
-        "id": 7,
-        "title": "Sahipsiz Kolye",
-        "hint": "Kadın sahilde bir kolye bulur ve boynuna takar.",
-        "solution": "Kadın, yıllar önce kaybolan kızının son hediye ettiği kolyeyi fark eder. Kolye, kızının ölümünden sonra durmuş ve yıllarca kadının hatırasını taşıyan tek şey olmuştur. Kolye kadının boynuna takıldığında, kaybolan kızını ve yaşadığı acıyı hatırlayarak derin bir duygusal çöküş yaşar. Kolyenin anlamı kadına ölümün acısını tekrar hatırlatmış ve o an kadının duygusal sınırlarını aşarak ona şiddetli bir şekilde etki etmiştir.",
+        "id": 1,
+        "title": "Su Kalıntısı",
+        "hint": "Boş ve kilitli bir odada bir adam ölü bulunur, odanın zemininde su birikintisi vardır.",
+        "solution": "Adam büyük bir buz kütlesinin üzerine çıkarak kendini asmıştır. Bulunduğunda buz erimiştir.",
         "difficulty": 1,
-        "isSolved": false
+        "isSolved": false,
+        "isLocked": false
+    },
+    {
+        "id": 2,
+        "title": "Ölüm Çekilişi",
+        "hint": "Çekilişi kazanan adam öldürülür",
+        "solution": "Issız bir bölgede mahsur kalan bir grup insan geride kalanların beslenebilmesi için birini öldürmeye karar verir ve çekiliş yapılır. Çekilişte ismi çıkan adam öldürülür.",
+        "difficulty": 1,
+        "isSolved": false,
+        "isLocked": true
+    },
+    {
+        "id": 3,
+        "title": "İş Elbisesi",
+        "hint": "Bir adamın üzerindeki kıyafeti yırtılır ve kısa bir süre içerisinde ölür.",
+        "solution": "Adam bir astronottur ve uzaydadır. Kıyafeti yırtılan adam kısa bir süre içerisinde oksijensiz kalıp ölür.",
+        "difficulty": 1,
+        "isSolved": false,
+        "isLocked": false
+    },
+    {
+        "id": 4,
+        "title": "3. Kişi",
+        "hint": "Bir adam eşiyle arabadayken bir anda durur ve arabadan iner. Arabaya geri döndüğünde eşini ölü bulur ve arabada 3. bir kişi vardır.",
+        "solution": "Adamın eşi hamiledir ve doğum başladığı için arabayı durdurup yardım aramak için arabadan iner. Bu sırada bebeği doğuran kadın ölür ve arabadaki 3. kişi bebekleridir.",
+        "difficulty": 1,
+        "isSolved": false,
+        "isLocked": true
+    },
+    {
+        "id": 5,
+        "title": "Beklenen Telefon",
+        "hint": "Bir kadın camdan atlayak intihar ettiği sırada telefonunun çaldığını duyar ve atladığına pişman olur.",
+        "solution": "Dünyada gerçekleşen bir felaketten sonra kadın yıllarca kimseye ulaşamayıp hayatta kalan tek kişi olduğunu düşünür ve intihar etmeye karar verir. Telefon çaldığında hayatta başkalarının da olduğunu anlar ve atladığına pişman olur",
+        "difficulty": 2,
+        "isSolved": false,
+        "isLocked": false
+    },
+    {
+        "id": 6,
+        "title": "Son İstakoz",
+        "hint": "Bir adam istakoza çok alerjisi olduğunu ve yediğinde öleceğini bilmesine rağmen istakozu yer ve ölür.",
+        "solution": "Adam idam cezası kesinleşen bir mahkumdur. Alerjisinden dolayı istakoz hiç yiyemeyen adam, son kez istakoz yemek ister ve yiyerek ölür.",
+        "difficulty": 1,
+        "isSolved": false,
+        "isLocked": true
+    },
+    {
+        "id": 7,
+        "title": "Ormandaki Dalgıç",
+        "hint": "Ormanın derinliklerinde dalgıç kıyafetli bir ölü bulunur.",
+        "solution": "Bir ormanda başlayan yangına müdahale etmek için itfaiye helikopteri denizden su alıp yangının üzerine boşaltır. O esnada denizde dalış yapan dalgıcı da su haznesine alan helikopter, dalgıçın ölümüne sevep olur.",
+        "difficulty": 2,
+        "isSolved": false,
+        "isLocked": true
     },
     {
         "id": 8,
-        "title": "Kırık Sandalye",
-        "hint": "Adam bir sandalyenin kırık bacağını fark eder.",
-        "solution": "Adam, yıllar önce işlenen bir cinayetle ilişkilendirilen bir sandalye bulur. Sandalyenin kırık bacağı, cinayet mahallinde kullanılan eşyadır. Cinayet sırasında kurban, sandalyenin bacağına sert bir şekilde vurulmuş ve bu olay cinayetin izlerini örtbas etmeye çalışan birisi tarafından gizlenmiştir. Adam, bu kırık bacak izini gördüğünde, yıllar önce kaybolan birinin ölümünün ardındaki gizemi çözer ve eski bir olayı gün yüzüne çıkarır.",
+        "title": "Yiyeceklerin Arasında",
+        "hint": "Bir adam etrafında bir sürü yiyecek olmasına rağmen yine de ölür.",
+        "solution": "Gıda şirketinde çalışan adam kontrol etmek için soğuk hava deposuna girer. İçeride kilitli kalan adam donarak ölür.",
         "difficulty": 1,
-        "isSolved": false
+        "isSolved": false,
+        "isLocked": true
     },
     {
         "id": 9,
-        "title": "Sessiz Telefon",
-        "hint": "Bir kadın telefonu açmadan dışarı fırlar.",
-        "solution": "Kadın, yıllardır kaybolan kardeşine ait bir telefon numarasını tanır. Fakat bu telefon aramasının gerisinde büyük bir tehdit yatmaktadır. Kardeşi, ölüm tehlikesi altında ve gizlice telefon kullanarak yardım istemektedir. Ancak, kardeşi o kadar korkmuş ve tehdit edilmiş ki, doğrudan arama yapamıyor. Kadın, telefonun çaldığını duyduğunda hemen dışarı fırlar çünkü sadece telefona cevap vererek hayatını riske atmak istememektedir. Bu arama, kadının yalnız olmadığını ve kardeşinin tehlikede olduğunu fark etmesine yol açar.",
-        "difficulty": 2,
-        "isSolved": false
+        "title": "Müziğin Ritmi",
+        "hint": "Bir süredir çalan müzik birden durduğunda kadın ölür.",
+        "solution": "İp cambazı olan kadın gözleri bağlı bir şekilde müziğin ritmine göre ipte yürümektedir. Sistemde meydana gelen bir arızadan dolayı müzik durur ve kadın dengesini kaybedip düşer.",
+        "difficulty": 3,
+        "isSolved": false,
+        "isLocked": true
     },
     {
         "id": 10,
-        "title": "Mühürlü Mektup",
-        "hint": "Adam mühürlü bir mektup bulur ve hemen işini bırakır.",
-        "solution": "Adam, yıllar önce işlediği bir suçu itiraf eden mühürlü bir mektup bulur. Mektup, geçmişteki bir olayın karanlık taraflarını açığa çıkarır. Adam, mektubu bulduğunda, başına gelebilecek felaketten endişelenir ve işini bırakır. Mektup, eski bir suçlunun itirafıdır ve şantaj yapma amacı taşır. Adamın korkusu, zamanla mektubun gizemiyle birleşerek onu daha da derin bir paniğe sürükler.",
+        "title": "Kardeş Katili",
+        "hint": "Kalabalık bir ortamda kardeşini öldüren adamı kimse şikayet etmez.",
+        "solution": "Adam bir cellattır ve kardeşi idam cezası alan bir suçludur. Bu sebeple kimse adamı ihbar etmez.",
         "difficulty": 2,
-        "isSolved": false
-    },
-    {
-        "id": 11,
-        "title": "Çarpan Kapı",
-        "hint": "Rüzgarın çarptığı kapı sesi duyan adam evden kaçmaya başlar.",
-        "solution": "Kapı sesinin yankısı, adamın geçmişteki bir travmasını tetikler. Adam, yıllar önce yaşadığı bir hırsızlık olayını hatırlar ve hırsızın geri dönüp dönmediğini sorgular. Hırsızlık sırasında duyduğu kapı sesi, o dönemin korku ve kaosunu tekrar yaşamasına neden olur. Adam, olayın tekrar yaşanmasından korkarak hemen evden kaçar, ama aslında evde hiç kimse yoktur. Kapı sesinin gerisinde yalnızca eski bir korku yatar.",
-        "difficulty": 3,
-        "isSolved": false
+        "isSolved": false,
+        "isLocked": true
     },
     {
         "id": 12,
-        "title": "Kırık Saat",
-        "hint": "Bir adam yıllar sonra kırık bir saati bulur ve ağlamaya başlar.",
-        "solution": "Adam, kaybolan kızının anısına sahip tek şey olan bir saati bulur. Saat, kızının ölümünden sonra durmuş ve adam onu yıllarca el değmeden saklamıştır. Saatin tekrar çalışmaya başlaması, adama kızının hayatta olabileceği umudunu verir. Ancak, adam bu saatin hayalini kurduğu kurtuluşun sadece bir hayal olduğunu fark eder ve derin bir duygusal çözülüş yaşar. Saatin çalışması, kaybolan kızının hatıralarını ve kaybını tekrar canlandırarak adamı duygusal olarak kırar.",
+        "title": "Ölüm Tartışması",
+        "hint": "İki arkadaş tartışırken biri diğerini iter ve birkaç dakika sonra sadece iten kişi ölür.",
+        "solution": "Düşmekte olan bir uçakta bulunan iki arkadaşın bir adet paraşütü vardır. İkisi de kendini feda edip arkadaşını kurtarmak ister. Biri paraşüt arkadaşının elindeyken onu uçaktan aşağı iter ve hayatını kurtarır. Kendisi uçakla beraber düşerek ölür.",
         "difficulty": 3,
-        "isSolved": false
+        "isSolved": false,
+        "isLocked": true
+    },
+    {
+        "id": 13,
+        "title": "Penceredeki Tehdit",
+        "hint": "Pencereden dışarı bakan kadın öleceğini anlar.",
+        "solution": "Kadın pencereden baktığı sırada gecedir. Camdaki yansımada arkasında elinde bıçak olan bir katil olduğunu görür ve öleceğini anlar.",
+        "difficulty": 2,
+        "isSolved": false,
+        "isLocked": true
+    },
+    {
+        "id": 14,
+        "title": "Akşam Yemeği",
+        "hint": "Bir kadın ölür ama eğer akşam yemeği pişirmeseydi hayatta olurdu.",
+        "solution": "Kadın ormanlık bir alanda kamp yapmaktadır. Yemek pişirdiği sırada yemeği kokusu bir ayıyı kamp alanına çeker ve ayı kadını öldürür.",
+        "difficulty": 1,
+        "isSolved": false,
+        "isLocked": true
+    },
+    {
+        "id": 15,
+        "title": "Kurtarıcı Uçak",
+        "hint": "Son adan uçağa binmeye karar veren kadının bu kararı hayatını kurtarır.",
+        "solution": "Yeni ameliyat olmuş olan kadın uçağa binmeden önce üzerindeki her şeyi çıkarmasına rağmen X-Ray cihazında defalarca öter. Bunun sonucunda MR çekilen kadının vücudunda neşter unutulduğu tespit edilir ve bu sayede kadının hayatı kurtulur.",
+        "difficulty": 3,
+        "isSolved": false,
+        "isLocked": true
+    },
+    {
+        "id": 16,
+        "title": "Grip",
+        "hint": "Grip olan adam grip olmasaydı ölmezdi",
+        "solution": "Grip olan adamın evinde gaz sızıntısı vardır fakat adamın burnu tıkalı olduğunu için bunu fark edemez. ",
+        "difficulty": 2,
+        "isSolved": false,
+        "isLocked": true
     }
 ]
 

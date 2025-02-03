@@ -14,5 +14,6 @@ class Story: Codable{
     let solution: String
     let difficulty: Int
     let isSolved: Bool
+    let isLocked: Bool
 }
 

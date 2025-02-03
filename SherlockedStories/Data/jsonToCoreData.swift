@@ -24,6 +24,7 @@ func preloadStories() {
             newStory.solution = story.solution
             newStory.difficulty = Int16(story.difficulty)
             newStory.isSolved = story.isSolved
+            newStory.isLocked = story.isLocked
         }
         
         // Değişiklikleri kaydet
