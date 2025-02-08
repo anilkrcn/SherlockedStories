@@ -28,6 +28,10 @@ class StoryDetailViewModel: ObservableObject {
         do{
             let fetchRequest = StoryModel.fetchRequest()
             fetchRequest.predicate = NSPredicate(format: "difficulty == %d", diff)
+            fetchRequest.sortDescriptors = [
+                        NSSortDescriptor(key: "isLocked", ascending: true), // false olanlar önce
+                       // NSSortDescriptor(key: "title", ascending: true)     // Alfabetik sıralama (isteğe bağlı)
+                    ]
             let list = try context.fetch(fetchRequest)
             
             stories = list

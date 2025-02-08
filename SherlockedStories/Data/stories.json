@@ -133,6 +133,87 @@
         "difficulty": 2,
         "isSolved": false,
         "isLocked": true
+    },
+    {
+        "id": 17,
+        "title": "Kardaki İz",
+        "hint": "Karlı bir havada işlenen cinayet mahalinde lastik izlerini inceleyen dedektif, şüphelilerin bulunduğu eve gittiğinde anında katilin kim olduğunu anlar.",
+        "solution": "Cinayet zanlısı tekerlekli sandalyededir. Dedektif tekerlekli sandalyenin karda bıraktığı izleri takip ederek suçluyu bulur.",
+        "difficulty": 2,
+        "isSolved": false,
+        "isLocked": false
+    },
+    {
+        "id": 18,
+        "title": "Makas",
+        "hint": "Bir adam ölü bulunur. Cinayet silahının makas olduğu tespit edilir ama adamda herhangi bir yara yoktur.",
+        "solution": "Adam makineye bağlı yaşayan bir hastadır. Katil makinenin kablolarını keserek adamı öldürmüştür. ",
+        "difficulty": 2,
+        "isSolved": false,
+        "isLocked": false
+    },
+    {
+        "id": 19,
+        "title": "Grip",
+        "hint": "Grip olan adam grip olmasaydı ölmezdi",
+        "solution": "Grip olan adamın evinde gaz sızıntısı vardır fakat adamın burnu tıkalı olduğunu için bunu fark edemez. ",
+        "difficulty": 2,
+        "isSolved": false,
+        "isLocked": true
+    },
+    {
+        "id": 20,
+        "title": "Farklı Ayakkabı",
+        "hint": "Yeni bir ayakkabı alıp işe o ayakkabılarla giden kadın, çalışırken ölür.",
+        "solution": "Kadın bir gösteride bıçak atıcısının hedefini kafasına koyan kişidir. Aldığı ayakkabı eski ayakkabısından daha yüksek tabanlı olduğu için bıçak kendisine isabet eder ve ölür.",
+        "difficulty": 3,
+        "isSolved": false,
+        "isLocked": false
+    },
+    {
+        "id": 21,
+        "title": "Takım Elbise",
+        "hint": "İşinden istifa ettiği gün evinde tüm gece parti düzenleyen adam ertesi gün takım elbise giyer ve intihar eder.",
+        "solution": "Piyangoyu kazandığını öğrenen adam işinden istifa eder ve evinde kutlama düzenler. Ertesi gün şık bir şekilde giyinip ödülünü almaya gitmeye hazırlanır ama biletini hiçbir yerde bulamaz ve intihar eder. ",
+        "difficulty": 3,
+        "isSolved": false,
+        "isLocked": false
+    },
+    {
+        "id": 22,
+        "title": "Grip",
+        "hint": "Grip olan adam grip olmasaydı ölmezdi",
+        "solution": "Grip olan adamın evinde gaz sızıntısı vardır fakat adamın burnu tıkalı olduğunu için bunu fark edemez. ",
+        "difficulty": 2,
+        "isSolved": false,
+        "isLocked": true
+    },
+    {
+        "id": 23,
+        "title": "Konuşmayan Papağan",
+        "hint": "Bir kadın papağan satın almak ister. Satıcı kadına duyduğu her şeyi tekrar edeceğini garanti ettiği bir papağan satar. Birkaç gün sonra papağan hiçbir şeyi tekrar etmediği için kadın kendini dolandırılmış hisseder fakat dolandırılmamıştır.",
+        "solution": "Papağan aslında sağırdır hiçbir şey duymadığı için hiçbir şey tekrar edemez. Dolayısıyla satıcı yalan söylememiştir.",
+        "difficulty": 2,
+        "isSolved": false,
+        "isLocked": false
+    },
+    {
+        "id": 24,
+        "title": "Otel Odası",
+        "hint": "Bir adam ve kadın aynı oteldedir. Adam kadına bakarak tek gözünü kırpar ve kadın ölür",
+        "solution": "Kaldıkları otel odalarının camları karşılıklıdır. Adam kadını öldürmek için oraya gelmiştir. Silahının dürbününden tek gözünü kırparak nişan alır ve kadını vurur.",
+        "difficulty": 2,
+        "isSolved": false,
+        "isLocked": false
+    },
+    {
+        "id": 25,
+        "title": "Satranç Kazananı",
+        "hint": "İki adam satranç oynar. Kazanan kendini öldürür.",
+        "solution": "Adamlar denizaltındadır ve denizaltı su almaya başlar. Ölecekleri kesindir. Bir tabanca ve tek bir kurşun vardır. İçlerinden birinin acısız ve hızlı ölmesi için satranç oynarlar. Kazanan kafasına sıkar, diğeri boğularak ölür.",
+        "difficulty": 3,
+        "isSolved": false,
+        "isLocked": false
     }
 ]
 
