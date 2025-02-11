@@ -35,6 +35,8 @@ struct HomeScreen: View {
                     
                 }
                 Spacer()
+                AdBannerView()
+                    .padding(.bottom, 10)
             }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         }
             .onAppear(){
