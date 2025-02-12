@@ -26,10 +26,10 @@ struct StoriesScreen: View {
                                 let secondTitleCard = viewModel.stories[(index * 2) + 1]
                                 HStack{
                                     NavigationLink(destination: StoryDetailScreen(storyModel: firstTitleCard, color: color!)){
-                                        StoryTitleCard(color: color!, font: font, title: firstTitleCard.title!, isLocked: firstTitleCard.isLocked)
+                                        StoryTitleCard(color: color!, font: font, title: firstTitleCard.title!, isLocked: firstTitleCard.isLocked, isSolved: firstTitleCard.isSolved)
                                     }
                                     NavigationLink(destination: StoryDetailScreen(storyModel: secondTitleCard, color: color!)){
-                                        StoryTitleCard(color: color!, font: font, title: secondTitleCard.title!, isLocked: secondTitleCard.isLocked)
+                                        StoryTitleCard(color: color!, font: font, title: secondTitleCard.title!, isLocked: secondTitleCard.isLocked, isSolved: secondTitleCard.isSolved)
                                     }
                                 }
                             }

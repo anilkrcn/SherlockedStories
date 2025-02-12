@@ -29,7 +29,7 @@ struct StoryDetailScreen: View {
                                 rotationAngle -= 180 // Geri dönüş
                                 isFlipped.toggle()
                             }
-                        }, color: color!)
+                        }, color: color!, isSolved: storyModel.isSolved)
                         .opacity(rotationAngle > 90 ? 1 : 0)
                         .scaleEffect(x: -1)
                     }else{

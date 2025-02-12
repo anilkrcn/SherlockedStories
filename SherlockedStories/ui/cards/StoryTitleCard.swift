@@ -12,6 +12,7 @@ struct StoryTitleCard: View {
     var font: String
     var title: String
     var isLocked: Bool
+    var isSolved: Bool
     var body: some View {
         if isLocked{
             ZStack{
