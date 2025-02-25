@@ -35,13 +35,28 @@ struct StoryTitleCard: View {
                     .padding()
             }
         }else{
-            Text(title)
-                .frame(width: 150, height: 150)
-                .font(Font.custom(font, size: 35))
-                .foregroundStyle(Color("BrandWhite"))
-                .background(Color(color))
-                .cornerRadius(10.0)
-                .padding()
+            ZStack{
+                Text(title)
+                    .frame(width: 150, height: 150)
+                    .font(Font.custom(font, size: 35))
+                    .foregroundStyle(Color("BrandWhite"))
+                if isSolved{
+                    Image(systemName: "checkmark")
+                        .resizable()
+                        .scaledToFit()
+                        .padding()
+                        .frame(width: 150, height: 150)
+                        .foregroundStyle(Color("BrandBlack"))
+                        .background(Color("BrandGray"))
+                        .cornerRadius(10.0)
+                        .opacity(0.3)
+                        .padding()
+                }
+        }
+            .frame(width: 150, height: 150)
+            .background(Color(color))
+            .cornerRadius(10.0)
+            .padding()
         }
     }
 }

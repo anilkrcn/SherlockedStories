@@ -6,6 +6,7 @@ import CoreData
 struct HomeScreen: View {
     let font = "BebasNeue-Regular"
     var viewModel = SaveViewModel()
+    private let interstitialViewModel = InterstitialViewModel()
     func printDatabasePath() {
         let urls = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)
         if let applicationSupportURL = urls.first {
@@ -35,8 +36,9 @@ struct HomeScreen: View {
                     
                 }
                 Spacer()
-                AdBannerView()
-                    .padding(.bottom, 10)
+                //AdBannerView()
+                BannerContentView()
+                    //.padding(.bottom, 10)
             }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         }
             .onAppear(){

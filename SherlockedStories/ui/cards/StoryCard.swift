@@ -54,6 +54,7 @@ struct StoryCardBackView: View{
     var onBack: () -> Void
     var color: String?
     @State var isSolved: Bool
+    var viewModel = StoryDetailViewModel()
     var body: some View {
             ZStack{
                 Rectangle()
@@ -81,12 +82,13 @@ struct StoryCardBackView: View{
                     HStack {
                                 Button(action: {
                                     isSolved.toggle()
+                                    viewModel.update(storyModel: story, isSolved: isSolved)
                                 }) {
                                     Image(systemName: isSolved ? "checkmark.square" : "square")
                                         .resizable()
                                         .frame(width: 24, height: 24)
                                 }
-                                Text("Checkbox Seçeneği")
+                                Text("Çözüldü")
                             }
                     Button("Geri Dön"){
                         print("Geri Dön tıklandı")

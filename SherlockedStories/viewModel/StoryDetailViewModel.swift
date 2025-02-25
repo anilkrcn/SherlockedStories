@@ -40,6 +40,11 @@ class StoryDetailViewModel: ObservableObject {
         }
     }
     
+    func update(storyModel: StoryModel, isSolved: Bool){
+        storyModel.isSolved = isSolved
+        saveContext()
+    }
+    
     
 }
 

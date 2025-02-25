@@ -12,6 +12,8 @@ struct StoriesScreen: View {
     let difficulty: String?
     let color: String?
     let diffScore: Int?
+    private let interstitialViewModel = InterstitialViewModel()
+    //@State var adCounter: Int = 1
     @ObservedObject var viewModel = StoryDetailViewModel()
     var body: some View {
             ZStack{
@@ -39,6 +41,7 @@ struct StoriesScreen: View {
             }
             .onAppear {
                 viewModel.storiesByDifficulty(diff: diffScore!)
+                
             }
         }
 }

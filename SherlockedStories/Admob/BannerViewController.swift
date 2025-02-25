@@ -1,49 +1,79 @@
-
-import SwiftUI
 import GoogleMobileAds
+import SwiftUI
 
-struct AdBannerView: UIViewRepresentable {
-    func makeUIView(context: Context) -> BannerView {
-        let bannerView = BannerView(adSize: AdSizeBanner)
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2435281174"
-        bannerView.rootViewController = UIApplication.shared.windows.first?.rootViewController
-        bannerView.load(Request())
-        return bannerView
+struct BannerContentView: View {
+
+  // [START add_banner_to_view]
+  var body: some View {
+    GeometryReader { geometry in
+      let adSize = currentOrientationAnchoredAdaptiveBanner(width: geometry.size.width)
+
+      VStack {
+        Spacer()
+        BannerViewContainer(adSize)
+          .frame(height: adSize.size.height)
+      }
     }
-
-    func updateUIView(_ uiView: BannerView, context: Context) {}
+    // [END add_banner_to_view]
+  }
 }
 
+// [START create_banner_view]
+private struct BannerViewContainer: UIViewRepresentable {
+  let adSize: AdSize
 
+  init(_ adSize: AdSize) {
+    self.adSize = adSize
+  }
 
-class AdManager: ObservableObject {
-    @Published var interstitialAd: InterstitialAd?
-    private var lastAdShownTime: Date?
+  func makeUIView(context: Context) -> UIView {
+    // Wrap the GADBannerView in a UIView. GADBannerView automatically reloads a new ad when its
+    // frame size changes; wrapping in a UIView container insulates the GADBannerView from size
+    // changes that impact the view returned from makeUIView.
+    let view = UIView()
+    view.addSubview(context.coordinator.bannerView)
+    return view
+  }
 
-    func loadInterstitial() {
-        let request = Request()
-        InterstitialAd.load(with: "ca-app-pub-xxxxxxxxxxxxxxxx/xxxxxxxxxx", request: request) { ad, error in
-            if let error = error {
-                print("Reklam yüklenirken hata oluştu: \(error.localizedDescription)")
-                return
-            }
-            self.interstitialAd = ad
-        }
+  func updateUIView(_ uiView: UIView, context: Context) {
+    context.coordinator.bannerView.adSize = adSize
+  }
+
+  func makeCoordinator() -> BannerCoordinator {
+    return BannerCoordinator(self)
+  }
+  // [END create_banner_view]
+
+  // [START create_banner]
+  class BannerCoordinator: NSObject, BannerViewDelegate {
+
+    private(set) lazy var bannerView: BannerView = {
+      let banner = BannerView(adSize: parent.adSize)
+      // [START load_ad]
+      banner.adUnitID = "ca-app-pub-3940256099942544/2435281174"
+      banner.load(Request())
+      // [END load_ad]
+      // [START set_delegate]
+      banner.delegate = self
+      // [END set_delegate]
+      return banner
+    }()
+
+    let parent: BannerViewContainer
+
+    init(_ parent: BannerViewContainer) {
+      self.parent = parent
+    }
+    // [END create_banner]
+
+    // MARK: - GADBannerViewDelegate methods
+
+    func bannerViewDidReceiveAd(_ bannerView: BannerView) {
+      print("DID RECEIVE AD.")
     }
 
-    func isAdReady() -> Bool {
-        guard let lastShown = lastAdShownTime else { return true }
-        return Date().timeIntervalSince(lastShown) > 300 // 5 dakika geçti mi?
+    func bannerView(_ bannerView: BannerView, didFailToReceiveAdWithError error: Error) {
+      print("FAILED TO RECEIVE AD: \(error.localizedDescription)")
     }
-
-    func showInterstitial(from rootViewController: UIViewController) {
-        if let interstitial = interstitialAd {
-            interstitial.present(from: rootViewController)
-            self.lastAdShownTime = Date()
-            self.loadInterstitial() // Yeni reklamı yükle
-        } else {
-            print("Reklam henüz hazır değil.")
-        }
-    }
+  }
 }
-
