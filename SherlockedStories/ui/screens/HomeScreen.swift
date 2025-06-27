@@ -30,9 +30,9 @@ struct HomeScreen: View {
                 AppBarView()
                     .padding(.bottom)
                 VStack{
-                    DifficultySections(diff: "Easy", color: "SherlockYellow", diffScore: 1)
-                    DifficultySections(diff: "Medium", color: "SherlockGray", diffScore: 2)
-                    DifficultySections(diff: "Hard", color: "SherlockLightBrown", diffScore: 3)
+                    DifficultySections(diff: "Kolay", color: "SherlockYellow", diffScore: 1)
+                    DifficultySections(diff: "Orta", color: "SherlockGray", diffScore: 2)
+                    DifficultySections(diff: "Zor", color: "SherlockLightBrown", diffScore: 3)
                     
                 }
                 Spacer()
@@ -58,6 +58,7 @@ struct HomeScreen: View {
 struct AppBarView: View {
     let font = "BebasNeue-Regular"
     var title: String = "Sherlocked"
+    var isVisible: Bool = true
     var body: some View {
         HStack{
             Text(title)
@@ -65,12 +66,14 @@ struct AppBarView: View {
                 .padding()
                 .foregroundStyle(Color("BrandWhite"))
             Spacer()
-            Button(action: {}){
-                Image(systemName: "menucard")
-                    .resizable()
-                    .frame(width: 42, height: 42)
-                    .foregroundStyle(Color("BrandWhite"))
-                    .cornerRadius(10)
+            if isVisible{
+                Button(action: {}){
+                    Image(systemName: "gear")
+                        .resizable()
+                        .frame(width: 42, height: 42)
+                        .foregroundStyle(Color("BrandWhite"))
+                        .cornerRadius(10)
+                }
             }
         }
         .padding(.horizontal)

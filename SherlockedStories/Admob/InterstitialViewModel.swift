@@ -2,9 +2,41 @@
 // [START load_ad]
 import GoogleMobileAds
 
-class InterstitialViewModel: NSObject, FullScreenContentDelegate {
-  private var interstitialAd: InterstitialAd?
+class InterstitialViewModel: NSObject, FullScreenContentDelegate, ObservableObject {
+    private var interstitialAd: InterstitialAd?
+    @Published var tapCount: Int = 0
+    var lastAdDisplayTime: Date? = Date()
 
+    func buttonTapped() {
+            
+            if tapCount == 5 {
+                if canShowAd() {
+                    showAd()
+                    tapCount = 0 // Tıklama sayısını sıfırla
+                } else {
+                    print("Reklam için 5 dakika geçmedi.")
+                }
+            }else if tapCount == 3{
+                Task{
+                    await loadAd()
+                }
+                tapCount+=1
+            }else{
+                tapCount+=1
+            }
+        }
+        
+        func canShowAd() -> Bool {
+            // Eğer hiç reklam gösterilmediyse doğrudan reklam gösterilebilir
+            guard let lastTime = lastAdDisplayTime else {
+                return true
+            }
+            
+            // Şimdiki zaman ile son reklam zamanı arasındaki farkı hesapla
+            let timeInterval = Date().timeIntervalSince(lastTime)
+            // 30 saniye denemek için yapıldı. Düzeltmeyi unutma!!!
+            return timeInterval >= 30 // 5 dakika = 300 saniye
+        }
   func loadAd() async {
     do {
       interstitialAd = try await InterstitialAd.load(
@@ -25,6 +57,7 @@ class InterstitialViewModel: NSObject, FullScreenContentDelegate {
     }
 
     interstitialAd.present(from: nil)
+      lastAdDisplayTime = Date()
   }
   // [END show_ad]
 

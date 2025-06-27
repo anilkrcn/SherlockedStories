@@ -18,6 +18,12 @@ struct StoryCard: View {
                 .frame(width: 300, height: 450)
                 .cornerRadius(20.0)
                 .padding()
+           Image("BackgroundImage")
+                .resizable()
+                .frame(width: 300, height: 450)
+                .cornerRadius(20.0)
+                .opacity(0.05)
+                
             VStack{
                 Text(story.title!).font(.title)
                     .fontWeight(.bold)
@@ -62,6 +68,11 @@ struct StoryCardBackView: View{
                     .frame(width: 300, height: 450)
                     .cornerRadius(20.0)
                     .padding()
+                Image("BackgroundImage")
+                     .resizable()
+                     .frame(width: 300, height: 450)
+                     .cornerRadius(20.0)
+                     .opacity(0.05)
                 VStack{
                     Text(story.title!).font(.title)
                         .fontWeight(.bold)
@@ -87,6 +98,7 @@ struct StoryCardBackView: View{
                                     Image(systemName: isSolved ? "checkmark.square" : "square")
                                         .resizable()
                                         .frame(width: 24, height: 24)
+                                        .foregroundStyle(Color.brandBlack)
                                 }
                                 Text("Çözüldü")
                             }

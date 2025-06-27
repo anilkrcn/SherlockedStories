@@ -5,7 +5,6 @@ struct StoryDetailScreen: View {
     @State var isFlipped = false
     @ObservedObject var viewModel = StoryDetailViewModel()
     @State var rotationAngle = 0.0
-    private let interstitialViewModel = InterstitialViewModel()
     var storyModel = StoryModel()
     var color: String?
     var body: some View {
@@ -13,7 +12,7 @@ struct StoryDetailScreen: View {
             Color("SherlockBrown").ignoresSafeArea()
             
             VStack{
-                AppBarView()
+                AppBarView(isVisible: false)
                     .padding(.bottom)
                 ZStack{
 //                    CardBackView(isFlipped: isFlipped)
@@ -35,7 +34,6 @@ struct StoryDetailScreen: View {
                         .scaleEffect(x: -1)
                     }else{
                         StoryCard(story: storyModel, onSolve: {
-                            interstitialViewModel.showAd()
                             withAnimation(.easeInOut(duration: 0.5)) {
                                 rotationAngle += 180 // Geri dönüş
                                 isFlipped.toggle()
@@ -49,17 +47,12 @@ struct StoryDetailScreen: View {
                     anchor: .center
                 )
                 Spacer()
+                BannerContentView()
             }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             
         }
         .onAppear(){
             viewModel.loadStories()
-            print("\(viewModel.stories.first!.title!)")
-            print("\(storyModel.isSolved)")
-            Task{
-                await interstitialViewModel.loadAd()
-            }
-            
         }
     }
 }

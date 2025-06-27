@@ -1,9 +1,3 @@
-//
-//  StoriesScreen.swift
-//  SherlockedStories
-//
-//  Created by Anıl Karacan on 8.01.2025.
-//
 
 import SwiftUI
 
@@ -12,14 +6,16 @@ struct StoriesScreen: View {
     let difficulty: String?
     let color: String?
     let diffScore: Int?
-    private let interstitialViewModel = InterstitialViewModel()
+    @State var tapCount = 0
+    @State var lastAdDisplayTime: Date? = nil
+    @ObservedObject var interstitialViewModel = InterstitialViewModel()
     //@State var adCounter: Int = 1
     @ObservedObject var viewModel = StoryDetailViewModel()
     var body: some View {
             ZStack{
                 Color("SherlockBrown").ignoresSafeArea()
                 VStack {
-                    AppBarView(title: "\(difficulty!) Stories")
+                    AppBarView(title: "\(difficulty!) Hikayeler", isVisible: false)
                         .padding(.bottom)
                     ScrollView{
                         VStack{
@@ -35,13 +31,22 @@ struct StoriesScreen: View {
                                     }
                                 }
                             }
+                            Spacer().frame(height: 20)
+                            Text("More Stories are Coming Soon!")
+                                .font(Font.custom(font, size: 20))
+                                .foregroundStyle(Color(color!))
+                
                         }
                     }
                 }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             }
             .onAppear {
                 viewModel.storiesByDifficulty(diff: diffScore!)
-                
+                lastAdDisplayTime = interstitialViewModel.lastAdDisplayTime
+                tapCount = interstitialViewModel.tapCount
+                interstitialViewModel.buttonTapped()
+                print(tapCount)
+                print(lastAdDisplayTime ?? "No value")
             }
         }
 }

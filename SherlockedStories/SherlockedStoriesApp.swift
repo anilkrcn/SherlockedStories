@@ -14,12 +14,20 @@ struct SherlockedStoriesApp: App {
     init() {
         //GADMobileAds.sharedInstance().start(completionHandler: nil)
         MobileAds.shared.start(completionHandler: nil)
+        setupNavigationBarAppearance()
     }
     var body: some Scene {
         WindowGroup {
             HomeScreen()
         }
     }
+    func setupNavigationBarAppearance() {
+           // let appearance = UINavigationBarAppearance()
+
+            // Geri düğmesi rengi
+            UIBarButtonItem.appearance().tintColor = UIColor.sherlockBeige
+           
+        }
 }
 
 var persistentContainer: NSPersistentContainer = {
