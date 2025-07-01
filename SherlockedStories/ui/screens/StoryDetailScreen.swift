@@ -14,15 +14,8 @@ struct StoryDetailScreen: View {
             VStack{
                 AppBarView(isVisible: false)
                     .padding(.bottom)
+                Spacer()
                 ZStack{
-//                    CardBackView(isFlipped: isFlipped)
-//                        .animation(isFlipped ? .linear.delay(0.35) : .linear, value: isFlipped)
-//                    CardFrontView(isFlipped: isFlipped)
-//                        .animation(isFlipped ? .linear : .linear.delay(0.35), value: isFlipped)
-//                    StoryCardBackView(story: storyModel, isFlipped: isFlipped)
-//                            .animation(isFlipped ? .linear.delay(0.35) : .linear, value: isFlipped)
-//                    StoryCard(story: storyModel, isFlipped: isFlipped)
-//                            .animation(isFlipped ? .linear : .linear.delay(0.35), value: isFlipped)
                     if isFlipped{
                         StoryCardBackView(story: storyModel, onBack: {
                             withAnimation(.easeInOut(duration: 0.5)) {
@@ -46,7 +39,7 @@ struct StoryDetailScreen: View {
                     axis: (x: 0, y: 1, z: 0), // Y ekseninde döner
                     anchor: .center
                 )
-                Spacer()
+               Spacer()
                 BannerContentView()
             }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             

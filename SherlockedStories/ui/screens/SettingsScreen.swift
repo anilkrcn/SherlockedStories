@@ -16,12 +16,16 @@ struct SettingsScreen: View {
             VStack{
                 AppBarView(title:"Ayarlar")
                     .padding(.bottom)
-                VStack(spacing: -10){
-                    SettingsSections(title: "Gizlilik Politikası")
-                    SettingsSections(title: "Kullanım Şartları")
-                    SettingsSections(title: "Bizi Değerlendirin")
-                    SettingsSections(title: "Hakkında")
+                Spacer()
+                ScrollView{
+                    VStack(spacing: -10){
+                        SettingsSections(title: "Gizlilik Politikası")
+                        SettingsSections(title: "Kullanım Şartları")
+                        SettingsSections(title: "Bizi Değerlendirin")
+                        SettingsSections(title: "Hakkında")
+                    }
                 }
+                Spacer()
                 
             }
         }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)

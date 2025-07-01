@@ -16,15 +16,8 @@ struct HomeScreen: View {
     var body: some View {
         NavigationView{
             ZStack{
-            //Color("KokeshiRed")
             Color("SherlockBrown")
                 .ignoresSafeArea()
-            //            Image("BackgroundImage")
-            //                .resizable()
-            //                .scaledToFill()
-            //                .ignoresSafeArea()
-            //                .opacity(0.2)
-            //                .foregroundStyle(Color("KekoshiDRed"))
             
             VStack{
                 AppBarView()
@@ -42,8 +35,6 @@ struct HomeScreen: View {
             }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         }
             .onAppear(){
-                //viewModel.save(title: "Gabar", hint: "Bu bir ipucudur dostum")
-                //printDatabasePath()
                 checkAndPreloadData()
                 printDatabasePath()
             }
@@ -67,7 +58,7 @@ struct AppBarView: View {
                 .foregroundStyle(Color("BrandWhite"))
             Spacer()
             if isVisible{
-                Button(action: {}){
+                NavigationLink(destination: SettingsScreen()){
                     Image(systemName: "gear")
                         .resizable()
                         .frame(width: 42, height: 42)
