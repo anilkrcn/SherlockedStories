@@ -13,6 +13,7 @@ import GoogleMobileAds
 struct SherlockedStoriesApp: App {
     init() {
         //GADMobileAds.sharedInstance().start(completionHandler: nil)
+        AppTrackingManager.requestTrackingAuthorization()
         MobileAds.shared.start(completionHandler: nil)
         setupNavigationBarAppearance()
     }

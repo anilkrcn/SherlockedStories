@@ -19,10 +19,10 @@ struct SettingsScreen: View {
                 Spacer()
                 ScrollView{
                     VStack(spacing: -10){
-                        SettingsSections(title: "Gizlilik Politikası")
-                        SettingsSections(title: "Kullanım Şartları")
+                        SettingsSections(title: "Gizlilik Politikası", urlString: "https://anilkrcn.github.io/privacy-policy/sherlockedstories.html")
+                       /* SettingsSections(title: "Kullanım Şartları")
                         SettingsSections(title: "Bizi Değerlendirin")
-                        SettingsSections(title: "Hakkında")
+                        SettingsSections(title: "Hakkında")*/
                     }
                 }
                 Spacer()

@@ -164,7 +164,7 @@
     {
         "id": 20,
         "title": "Farklı Ayakkabı",
-        "hint": "Yeni bir ayakkabı alıp işe o ayakkabılarla giden kadın, çalışırken ölür.",
+        "hint": "İlk defa farklı bir ayakkabıyla işe giden kadın o gün ölür.",
         "solution": "Kadın bir gösteride bıçak atıcısının hedefini kafasına koyan kişidir. Aldığı ayakkabı eski ayakkabısından daha yüksek tabanlı olduğu için bıçak kendisine isabet eder ve ölür.",
         "difficulty": 3,
         "isSolved": false,
@@ -211,6 +211,42 @@
         "title": "Satranç Kazananı",
         "hint": "İki adam satranç oynar. Kazanan kendini öldürür.",
         "solution": "Adamlar denizaltındadır ve denizaltı su almaya başlar. Ölecekleri kesindir. Bir tabanca ve tek bir kurşun vardır. İçlerinden birinin acısız ve hızlı ölmesi için satranç oynarlar. Kazanan kafasına sıkar, diğeri boğularak ölür.",
+        "difficulty": 3,
+        "isSolved": false,
+        "isLocked": false
+    },
+    {
+        "id": 26,
+        "title": "Paket ve Ceset",
+        "hint": "Çölün ortasında bir ceset ve yanında duran bir paket bulunur.",
+        "solution": "Uçaktan atlayan adamın paraşütü açılmaz ve paraşüt paketi ile birlikte düşerek ölür.",
+        "difficulty": 1,
+        "isSolved": false,
+        "isLocked": false
+    },
+    {
+        "id": 27,
+        "title": "Otel Odası",
+        "hint": "Bir adam ve kadın aynı otelde kalırlar. Adam kadına bakarak bir gözünü kırpar ve kadın ölür.",
+        "solution": "Adam ve kadının odalarının camları birbirine bakmaktadır. Adamın görevi kadını öldürmektir. Tek gözünü kırparak tüfeği ile kadına bakarak nişan alır ve kadını öldürür.",
+        "difficulty": 3,
+        "isSolved": false,
+        "isLocked": false
+    },
+    {
+        "id": 28,
+        "title": "Balo",
+        "hint": "Bir adam büyük bir balo salonuna girer ve salonda bulunan herkesin ölmüş olduğunu görür fakat hiç şaşırmaz.",
+        "solution": "Adam yıllar önce batmış olan bir gemiye dalış yapar. Geminin balo salonunda yolcuların iskeletleri hala durmaktadır.",
+        "difficulty": 2,
+        "isSolved": false,
+        "isLocked": false
+    },
+    {
+        "id": 29,
+        "title": "Son Av",
+        "hint": "Bir avcı soğuk bir kış günü silahını hedefine doğru dikkatlice doğrultur. Ateş ettikten bir süre sonra kendisi ölür.",
+        "solution": "Avcının avlandığı bölgede çığ riski çok yüksektir. Silahını ateşlediğinde çıkan yüksek ses çığa sebep olur ve avcı çığın altında kalarak ölür.",
         "difficulty": 3,
         "isSolved": false,
         "isLocked": false
