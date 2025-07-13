@@ -1,37 +1,51 @@
-//
-//  SettingsScreen.swift
-//  SherlockedStories
-//
-//  Created by Anıl Karacan on 29.06.2025.
-//
-
 import SwiftUI
 
 struct SettingsScreen: View {
-    let font = "BebasNeue-Regular"
+    @State private var showOnboarding = false
+    @Environment(\.openURL) var openURL
+
     var body: some View {
-        ZStack{
-            Color("SherlockBrown")
-                .ignoresSafeArea()
-            VStack{
-                AppBarView(title:"Ayarlar")
-                    .padding(.bottom)
-                Spacer()
-                ScrollView{
-                    VStack(spacing: -10){
-                        SettingsSections(title: "Gizlilik Politikası", urlString: "https://anilkrcn.github.io/privacy-policy/sherlockedstories.html")
-                       /* SettingsSections(title: "Kullanım Şartları")
-                        SettingsSections(title: "Bizi Değerlendirin")
-                        SettingsSections(title: "Hakkında")*/
+        NavigationView {
+            ZStack{
+                Color("SherlockBrown")
+                    .ignoresSafeArea()
+                VStack{
+                    AppBarView(title: "Ayarlar", isVisible: false)
+                        .padding(.bottom)
+                ScrollView {
+                    VStack(spacing: 20) {
+                        // Yardım Bölümü
+                        SettingsSectionView(
+                            title: "Yardım",
+                            items: [
+                                SettingsButton(title: "Nasıl Oynanır?", action: { showOnboarding = true })
+                            ]
+                        )
+                        
+                        // Yasal Bölüm
+                        SettingsSectionView(
+                            title: "Yasal",
+                            items: [
+                                SettingsButton(title: "Gizlilik Politikası", action: {
+                                    openURL(URL(string: "https://anilkrcn.github.io/privacy-policy/sherlockedstories.html")!)
+                                }),
+                                SettingsButton(title: "Kullanım Koşulları", action: {
+                                    openURL(URL(string: "https://anilkrcn.github.io/privacy-policy/sherlockedstories.html")!)
+                                })
+                            ]
+                        )
+                    }
+                    .padding()
+                    .background(Color(.sherlockBrown)) // Form arka planı
+                }
+                //.navigationTitle("Ayarlar")
+                .sheet(isPresented: $showOnboarding) {
+                    OnboardingContentView {
+                        showOnboarding = false
                     }
                 }
-                Spacer()
-                
             }
-        }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        }
+        }
     }
-}
-
-#Preview {
-    SettingsScreen()
 }

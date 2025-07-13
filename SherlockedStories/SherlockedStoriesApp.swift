@@ -11,6 +11,7 @@ import GoogleMobileAds
 
 @main
 struct SherlockedStoriesApp: App {
+    @AppStorage("hasSeenOnboarding") var hasSeenOnboarding = false
     init() {
         //GADMobileAds.sharedInstance().start(completionHandler: nil)
         AppTrackingManager.requestTrackingAuthorization()
@@ -19,7 +20,11 @@ struct SherlockedStoriesApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            HomeScreen()
+            if hasSeenOnboarding {
+                            HomeScreen()
+                        } else {
+                            InitialOnboardingView()
+                        }
         }
     }
     func setupNavigationBarAppearance() {
