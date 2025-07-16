@@ -105,11 +105,12 @@
 				};
 			};
 			buildConfigurationList = D6498D482D2B21FD004E1E73 /* Build configuration list for PBXProject "SherlockedStories" */;
-			developmentRegion = en;
+			developmentRegion = tr;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = D6498D442D2B21FD004E1E73;
 			minimizedProjectReferenceProxies = 1;

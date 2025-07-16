@@ -27,7 +27,7 @@ struct SettingsScreen: View {
                             title: "Yasal",
                             items: [
                                 SettingsButton(title: "Gizlilik Politikası", action: {
-                                    openURL(URL(string: "https://anilkrcn.github.io/privacy-policy/sherlockedstories.html")!)
+                                    openURL(URL(string: "https://anilkrcn.github.io/privacy-policy/PrivacyPolicy")!)
                                 }),
                                 SettingsButton(title: "Kullanım Koşulları", action: {
                                     openURL(URL(string: "https://anilkrcn.github.io/privacy-policy/sherlockedstories.html")!)

@@ -8,7 +8,7 @@ struct OnboardingContentView: View {
             Color(.sherlockBeige)
                 .ignoresSafeArea()
             
-            ScrollView {
+            
                 VStack(spacing: 24) {
                     Spacer()
                     
@@ -47,7 +47,7 @@ struct OnboardingContentView: View {
                     .multilineTextAlignment(.leading)
                     .padding(.horizontal)
                     
-                    Spacer()
+                   // Spacer()
                     
                     Button(action: {
                         onDismiss()
@@ -63,7 +63,7 @@ struct OnboardingContentView: View {
                     }
                 }
                 .padding()
-            }
+            
         }
     }
 }
