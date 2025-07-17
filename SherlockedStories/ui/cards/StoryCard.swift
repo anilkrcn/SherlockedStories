@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StoryCard: View {
     var story = StoryModel()
+    var font = "BebasNeue-Regular"
     var onSolve: () -> Void
     var color: String?
     var body: some View {
@@ -25,8 +26,8 @@ struct StoryCard: View {
                 .opacity(0.05)
                 
             VStack{
-                Text(story.title!).font(.title)
-                    .fontWeight(.bold)
+                Text(story.title!).font(Font.custom(font, size: 38))
+                    //.fontWeight(.bold)
                     //.frame(width: 100, height: 50)
                     .padding(.top)
                     .foregroundStyle(Color("BrandWhite"))
@@ -59,6 +60,7 @@ struct StoryCardBackView: View{
     var story = StoryModel()
     var onBack: () -> Void
     var color: String?
+    var font = "BebasNeue-Regular"
     @State var isSolved: Bool
     var viewModel = StoryDetailViewModel()
     var body: some View {
@@ -74,8 +76,8 @@ struct StoryCardBackView: View{
                      .cornerRadius(20.0)
                      .opacity(0.05)
                 VStack{
-                    Text(story.title!).font(.title)
-                        .fontWeight(.bold)
+                    Text(story.title!).font(Font.custom(font, size: 38))
+                        //.fontWeight(.bold)
 //                        .frame(width: 100, height: 50)
                         .padding(.top)
                         .foregroundStyle(Color("BrandWhite"))

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Su Kalıntısı",
+        "title": "SU KALINTISI",
         "hint": "Boş ve kilitli bir odada bir adam ölü bulunur, odanın zemininde su birikintisi vardır.",
         "solution": "Adam büyük bir buz kütlesinin üzerine çıkarak kendini asmıştır. Bulunduğunda buz erimiştir.",
         "difficulty": 1,
@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-        "title": "Ölüm Çekilişi",
+        "title": "ÖLÜM ÇEKİLİŞİ",
         "hint": "Çekilişi kazanan adam öldürülür",
         "solution": "Issız bir bölgede mahsur kalan bir grup insan geride kalanların beslenebilmesi için birini öldürmeye karar verir ve çekiliş yapılır. Çekilişte ismi çıkan adam öldürülür.",
         "difficulty": 1,
@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "title": "İş Elbisesi",
+        "title": "İŞ ELBİSESİ",
         "hint": "Bir adamın üzerindeki kıyafeti yırtılır ve kısa bir süre içerisinde ölür.",
         "solution": "Adam bir astronottur ve uzaydadır. Kıyafeti yırtılan adam kısa bir süre içerisinde oksijensiz kalıp ölür.",
         "difficulty": 1,
@@ -28,7 +28,7 @@
     },
     {
         "id": 4,
-        "title": "3. Kişi",
+        "title": "3. KİŞİ",
         "hint": "Bir adam eşiyle arabadayken bir anda durur ve arabadan iner. Arabaya geri döndüğünde eşini ölü bulur ve arabada 3. bir kişi vardır.",
         "solution": "Adamın eşi hamiledir ve doğum başladığı için arabayı durdurup yardım aramak için arabadan iner. Bu sırada bebeği doğuran kadın ölür ve arabadaki 3. kişi bebekleridir.",
         "difficulty": 1,
@@ -37,7 +37,7 @@
     },
     {
         "id": 5,
-        "title": "Beklenen Telefon",
+        "title": "BEKLENEN TELEFON",
         "hint": "Bir kadın camdan atlayak intihar ettiği sırada telefonunun çaldığını duyar ve atladığına pişman olur.",
         "solution": "Dünyada gerçekleşen bir felaketten sonra kadın yıllarca kimseye ulaşamayıp hayatta kalan tek kişi olduğunu düşünür ve intihar etmeye karar verir. Telefon çaldığında hayatta başkalarının da olduğunu anlar ve atladığına pişman olur",
         "difficulty": 2,
@@ -46,7 +46,7 @@
     },
     {
         "id": 6,
-        "title": "Son İstakoz",
+        "title": "SON İSTAKOZ",
         "hint": "Bir adam istakoza çok alerjisi olduğunu ve yediğinde öleceğini bilmesine rağmen istakozu yer ve ölür.",
         "solution": "Adam idam cezası kesinleşen bir mahkumdur. Alerjisinden dolayı istakoz hiç yiyemeyen adam, son kez istakoz yemek ister ve yiyerek ölür.",
         "difficulty": 1,
@@ -55,7 +55,7 @@
     },
     {
         "id": 7,
-        "title": "Ormandaki Dalgıç",
+        "title": "ORMANDAKİ DALGIÇ",
         "hint": "Ormanın derinliklerinde dalgıç kıyafetli bir ölü bulunur.",
         "solution": "Bir ormanda başlayan yangına müdahale etmek için itfaiye helikopteri denizden su alıp yangının üzerine boşaltır. O esnada denizde dalış yapan dalgıcı da su haznesine alan helikopter, dalgıçın ölümüne sevep olur.",
         "difficulty": 2,
@@ -64,7 +64,7 @@
     },
     {
         "id": 8,
-        "title": "Yiyeceklerin Arasında",
+        "title": "YİYECEKLERİN ARASINDA",
         "hint": "Bir adam etrafında bir sürü yiyecek olmasına rağmen yine de ölür.",
         "solution": "Gıda şirketinde çalışan adam kontrol etmek için soğuk hava deposuna girer. İçeride kilitli kalan adam donarak ölür.",
         "difficulty": 1,
@@ -73,7 +73,7 @@
     },
     {
         "id": 9,
-        "title": "Müziğin Ritmi",
+        "title": "MÜZİĞİN RİTMİ",
         "hint": "Bir süredir çalan müzik birden durduğunda kadın ölür.",
         "solution": "İp cambazı olan kadın gözleri bağlı bir şekilde müziğin ritmine göre ipte yürümektedir. Sistemde meydana gelen bir arızadan dolayı müzik durur ve kadın dengesini kaybedip düşer.",
         "difficulty": 3,
@@ -82,7 +82,7 @@
     },
     {
         "id": 10,
-        "title": "Kardeş Katili",
+        "title": "KARDEŞ KATİLİ",
         "hint": "Kalabalık bir ortamda kardeşini öldüren adamı kimse şikayet etmez.",
         "solution": "Adam bir cellattır ve kardeşi idam cezası alan bir suçludur. Bu sebeple kimse adamı ihbar etmez.",
         "difficulty": 2,
@@ -91,7 +91,7 @@
     },
     {
         "id": 12,
-        "title": "Ölüm Tartışması",
+        "title": "ÖLÜM TARTIŞMASI",
         "hint": "İki arkadaş tartışırken biri diğerini iter ve birkaç dakika sonra sadece iten kişi ölür.",
         "solution": "Düşmekte olan bir uçakta bulunan iki arkadaşın bir adet paraşütü vardır. İkisi de kendini feda edip arkadaşını kurtarmak ister. Biri paraşüt arkadaşının elindeyken onu uçaktan aşağı iter ve hayatını kurtarır. Kendisi uçakla beraber düşerek ölür.",
         "difficulty": 3,
@@ -100,7 +100,7 @@
     },
     {
         "id": 13,
-        "title": "Penceredeki Tehdit",
+        "title": "PENCEREDEKİ TEHDİT",
         "hint": "Pencereden dışarı bakan kadın öleceğini anlar.",
         "solution": "Kadın pencereden baktığı sırada gecedir. Camdaki yansımada arkasında elinde bıçak olan bir katil olduğunu görür ve öleceğini anlar.",
         "difficulty": 2,
@@ -109,7 +109,7 @@
     },
     {
         "id": 14,
-        "title": "Akşam Yemeği",
+        "title": "AKŞAM YEMEĞİ",
         "hint": "Bir kadın ölür ama eğer akşam yemeği pişirmeseydi hayatta olurdu.",
         "solution": "Kadın ormanlık bir alanda kamp yapmaktadır. Yemek pişirdiği sırada yemeği kokusu bir ayıyı kamp alanına çeker ve ayı kadını öldürür.",
         "difficulty": 1,
@@ -118,7 +118,7 @@
     },
     {
         "id": 15,
-        "title": "Kurtarıcı Uçak",
+        "title": "KURTARICI UÇAK",
         "hint": "Son adan uçağa binmeye karar veren kadının bu kararı hayatını kurtarır.",
         "solution": "Yeni ameliyat olmuş olan kadın uçağa binmeden önce üzerindeki her şeyi çıkarmasına rağmen X-Ray cihazında defalarca öter. Bunun sonucunda MR çekilen kadının vücudunda neşter unutulduğu tespit edilir ve bu sayede kadının hayatı kurtulur.",
         "difficulty": 3,
@@ -127,7 +127,7 @@
     },
     {
         "id": 16,
-        "title": "Grip",
+        "title": "GRİP",
         "hint": "Grip olan adam grip olmasaydı ölmezdi",
         "solution": "Grip olan adamın evinde gaz sızıntısı vardır fakat adamın burnu tıkalı olduğunu için bunu fark edemez. ",
         "difficulty": 2,
@@ -136,7 +136,7 @@
     },
     {
         "id": 17,
-        "title": "Kardaki İz",
+        "title": "KARDAKİ İZ",
         "hint": "Karlı bir havada işlenen cinayet mahalinde lastik izlerini inceleyen dedektif, şüphelilerin bulunduğu eve gittiğinde anında katilin kim olduğunu anlar.",
         "solution": "Cinayet zanlısı tekerlekli sandalyededir. Dedektif tekerlekli sandalyenin karda bıraktığı izleri takip ederek suçluyu bulur.",
         "difficulty": 2,
@@ -145,7 +145,7 @@
     },
     {
         "id": 18,
-        "title": "Makas",
+        "title": "MAKAS",
         "hint": "Bir adam ölü bulunur. Cinayet silahının makas olduğu tespit edilir ama adamda herhangi bir yara yoktur.",
         "solution": "Adam makineye bağlı yaşayan bir hastadır. Katil makinenin kablolarını keserek adamı öldürmüştür. ",
         "difficulty": 2,
@@ -154,7 +154,7 @@
     },
     {
         "id": 19,
-        "title": "Farklı Ayakkabı",
+        "title": "FARKLI AYAKKABI",
         "hint": "İlk defa farklı bir ayakkabıyla işe giden kadın o gün ölür.",
         "solution": "Kadın bir gösteride bıçak atıcısının hedefini kafasına koyan kişidir. Aldığı ayakkabı eski ayakkabısından daha yüksek tabanlı olduğu için bıçak kendisine isabet eder ve ölür.",
         "difficulty": 3,
@@ -163,7 +163,7 @@
     },
     {
         "id": 20,
-        "title": "Takım Elbise",
+        "title": "TAKIM ELBİSE",
         "hint": "İşinden istifa ettiği gün evinde tüm gece parti düzenleyen adam ertesi gün takım elbise giyer ve intihar eder.",
         "solution": "Piyangoyu kazandığını öğrenen adam işinden istifa eder ve evinde kutlama düzenler. Ertesi gün şık bir şekilde giyinip ödülünü almaya gitmeye hazırlanır ama biletini hiçbir yerde bulamaz ve intihar eder. ",
         "difficulty": 3,
@@ -173,7 +173,7 @@
     
     {
         "id": 21,
-        "title": "Konuşmayan Papağan",
+        "title": "KONUŞMAYAN PAPAĞAN",
         "hint": "Bir kadın papağan satın almak ister. Satıcı kadına duyduğu her şeyi tekrar edeceğini garanti ettiği bir papağan satar. Birkaç gün sonra papağan hiçbir şeyi tekrar etmediği için kadın kendini dolandırılmış hisseder fakat dolandırılmamıştır.",
         "solution": "Papağan aslında sağırdır hiçbir şey duymadığı için hiçbir şey tekrar edemez. Dolayısıyla satıcı yalan söylememiştir.",
         "difficulty": 2,
@@ -181,17 +181,8 @@
         "isLocked": false
     },
     {
-        "id": 22,
-        "title": "Otel Odası",
-        "hint": "Bir adam ve kadın aynı oteldedir. Adam kadına bakarak tek gözünü kırpar ve kadın ölür",
-        "solution": "Kaldıkları otel odalarının camları karşılıklıdır. Adam kadını öldürmek için oraya gelmiştir. Silahının dürbününden tek gözünü kırparak nişan alır ve kadını vurur.",
-        "difficulty": 2,
-        "isSolved": false,
-        "isLocked": false
-    },
-    {
         "id": 23,
-        "title": "Satranç Kazananı",
+        "title": "SATRANÇ KAZANANI",
         "hint": "İki adam satranç oynar. Kazanan kendini öldürür.",
         "solution": "Adamlar denizaltındadır ve denizaltı su almaya başlar. Ölecekleri kesindir. Bir tabanca ve tek bir kurşun vardır. İçlerinden birinin acısız ve hızlı ölmesi için satranç oynarlar. Kazanan kafasına sıkar, diğeri boğularak ölür.",
         "difficulty": 3,
@@ -200,7 +191,7 @@
     },
     {
         "id": 24,
-        "title": "Paket ve Ceset",
+        "title": "PAKET VE CESET",
         "hint": "Çölün ortasında bir ceset ve yanında duran bir paket bulunur.",
         "solution": "Uçaktan atlayan adamın paraşütü açılmaz ve paraşüt paketi ile birlikte düşerek ölür.",
         "difficulty": 1,
@@ -209,7 +200,7 @@
     },
     {
         "id": 25,
-        "title": "Otel Odası",
+        "title": "OTEL ODASI",
         "hint": "Bir adam ve kadın aynı otelde kalırlar. Adam kadına bakarak bir gözünü kırpar ve kadın ölür.",
         "solution": "Adam ve kadının odalarının camları birbirine bakmaktadır. Adamın görevi kadını öldürmektir. Tek gözünü kırparak tüfeği ile kadına bakarak nişan alır ve kadını öldürür.",
         "difficulty": 3,
@@ -218,7 +209,7 @@
     },
     {
         "id": 26,
-        "title": "Balo",
+        "title": "BALO",
         "hint": "Bir adam büyük bir balo salonuna girer ve salonda bulunan herkesin ölmüş olduğunu görür fakat hiç şaşırmaz.",
         "solution": "Adam yıllar önce batmış olan bir gemiye dalış yapar. Geminin balo salonunda yolcuların iskeletleri hala durmaktadır.",
         "difficulty": 2,
@@ -227,7 +218,7 @@
     },
     {
         "id": 27,
-        "title": "Son Av",
+        "title": "SON AV",
         "hint": "Bir avcı soğuk bir kış günü silahını hedefine doğru dikkatlice doğrultur. Ateş ettikten bir süre sonra kendisi ölür.",
         "solution": "Avcının avlandığı bölgede çığ riski çok yüksektir. Silahını ateşlediğinde çıkan yüksek ses çığa sebep olur ve avcı çığın altında kalarak ölür.",
         "difficulty": 3,
