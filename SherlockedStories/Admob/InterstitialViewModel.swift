@@ -9,14 +9,14 @@ class InterstitialViewModel: NSObject, FullScreenContentDelegate, ObservableObje
 
     func buttonTapped() {
             
-            if tapCount == 5 {
+            if tapCount == 3 {
                 if canShowAd() {
                     showAd()
                     tapCount = 0 // Tıklama sayısını sıfırla
                 } else {
                     print("Reklam için 5 dakika geçmedi.")
                 }
-            }else if tapCount == 3{
+            }else if tapCount == 1{
                 Task{
                     await loadAd()
                 }

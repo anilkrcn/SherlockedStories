@@ -15,7 +15,7 @@
         "solution": "Issız bir bölgede mahsur kalan bir grup insan geride kalanların beslenebilmesi için birini öldürmeye karar verir ve çekiliş yapılır. Çekilişte ismi çıkan adam öldürülür.",
         "difficulty": 1,
         "isSolved": false,
-        "isLocked": true
+        "isLocked": false
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
         "solution": "Adamın eşi hamiledir ve doğum başladığı için arabayı durdurup yardım aramak için arabadan iner. Bu sırada bebeği doğuran kadın ölür ve arabadaki 3. kişi bebekleridir.",
         "difficulty": 1,
         "isSolved": false,
-        "isLocked": true
+        "isLocked": false
     },
     {
         "id": 5,
@@ -51,7 +51,7 @@
         "solution": "Adam idam cezası kesinleşen bir mahkumdur. Alerjisinden dolayı istakoz hiç yiyemeyen adam, son kez istakoz yemek ister ve yiyerek ölür.",
         "difficulty": 1,
         "isSolved": false,
-        "isLocked": true
+        "isLocked": false
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "solution": "Bir ormanda başlayan yangına müdahale etmek için itfaiye helikopteri denizden su alıp yangının üzerine boşaltır. O esnada denizde dalış yapan dalgıcı da su haznesine alan helikopter, dalgıçın ölümüne sevep olur.",
         "difficulty": 2,
         "isSolved": false,
-        "isLocked": true
+        "isLocked": false
     },
     {
         "id": 8,
@@ -69,7 +69,7 @@
         "solution": "Gıda şirketinde çalışan adam kontrol etmek için soğuk hava deposuna girer. İçeride kilitli kalan adam donarak ölür.",
         "difficulty": 1,
         "isSolved": false,
-        "isLocked": true
+        "isLocked": false
     },
     {
         "id": 9,
@@ -78,7 +78,7 @@
         "solution": "İp cambazı olan kadın gözleri bağlı bir şekilde müziğin ritmine göre ipte yürümektedir. Sistemde meydana gelen bir arızadan dolayı müzik durur ve kadın dengesini kaybedip düşer.",
         "difficulty": 3,
         "isSolved": false,
-        "isLocked": true
+        "isLocked": false
     },
     {
         "id": 10,
@@ -87,7 +87,7 @@
         "solution": "Adam bir cellattır ve kardeşi idam cezası alan bir suçludur. Bu sebeple kimse adamı ihbar etmez.",
         "difficulty": 2,
         "isSolved": false,
-        "isLocked": true
+        "isLocked": false
     },
     {
         "id": 12,
@@ -96,7 +96,7 @@
         "solution": "Düşmekte olan bir uçakta bulunan iki arkadaşın bir adet paraşütü vardır. İkisi de kendini feda edip arkadaşını kurtarmak ister. Biri paraşüt arkadaşının elindeyken onu uçaktan aşağı iter ve hayatını kurtarır. Kendisi uçakla beraber düşerek ölür.",
         "difficulty": 3,
         "isSolved": false,
-        "isLocked": true
+        "isLocked": false
     },
     {
         "id": 13,
@@ -105,7 +105,7 @@
         "solution": "Kadın pencereden baktığı sırada gecedir. Camdaki yansımada arkasında elinde bıçak olan bir katil olduğunu görür ve öleceğini anlar.",
         "difficulty": 2,
         "isSolved": false,
-        "isLocked": true
+        "isLocked": false
     },
     {
         "id": 14,
@@ -114,7 +114,7 @@
         "solution": "Kadın ormanlık bir alanda kamp yapmaktadır. Yemek pişirdiği sırada yemeği kokusu bir ayıyı kamp alanına çeker ve ayı kadını öldürür.",
         "difficulty": 1,
         "isSolved": false,
-        "isLocked": true
+        "isLocked": false
     },
     {
         "id": 15,
@@ -123,7 +123,7 @@
         "solution": "Yeni ameliyat olmuş olan kadın uçağa binmeden önce üzerindeki her şeyi çıkarmasına rağmen X-Ray cihazında defalarca öter. Bunun sonucunda MR çekilen kadının vücudunda neşter unutulduğu tespit edilir ve bu sayede kadının hayatı kurtulur.",
         "difficulty": 3,
         "isSolved": false,
-        "isLocked": true
+        "isLocked": false
     },
     {
         "id": 16,
@@ -132,7 +132,7 @@
         "solution": "Grip olan adamın evinde gaz sızıntısı vardır fakat adamın burnu tıkalı olduğunu için bunu fark edemez. ",
         "difficulty": 2,
         "isSolved": false,
-        "isLocked": true
+        "isLocked": false
     },
     {
         "id": 17,
@@ -154,15 +154,6 @@
     },
     {
         "id": 19,
-        "title": "Grip",
-        "hint": "Grip olan adam grip olmasaydı ölmezdi",
-        "solution": "Grip olan adamın evinde gaz sızıntısı vardır fakat adamın burnu tıkalı olduğunu için bunu fark edemez. ",
-        "difficulty": 2,
-        "isSolved": false,
-        "isLocked": true
-    },
-    {
-        "id": 20,
         "title": "Farklı Ayakkabı",
         "hint": "İlk defa farklı bir ayakkabıyla işe giden kadın o gün ölür.",
         "solution": "Kadın bir gösteride bıçak atıcısının hedefini kafasına koyan kişidir. Aldığı ayakkabı eski ayakkabısından daha yüksek tabanlı olduğu için bıçak kendisine isabet eder ve ölür.",
@@ -171,7 +162,7 @@
         "isLocked": false
     },
     {
-        "id": 21,
+        "id": 20,
         "title": "Takım Elbise",
         "hint": "İşinden istifa ettiği gün evinde tüm gece parti düzenleyen adam ertesi gün takım elbise giyer ve intihar eder.",
         "solution": "Piyangoyu kazandığını öğrenen adam işinden istifa eder ve evinde kutlama düzenler. Ertesi gün şık bir şekilde giyinip ödülünü almaya gitmeye hazırlanır ama biletini hiçbir yerde bulamaz ve intihar eder. ",
@@ -179,17 +170,9 @@
         "isSolved": false,
         "isLocked": false
     },
+    
     {
-        "id": 22,
-        "title": "Grip",
-        "hint": "Grip olan adam grip olmasaydı ölmezdi",
-        "solution": "Grip olan adamın evinde gaz sızıntısı vardır fakat adamın burnu tıkalı olduğunu için bunu fark edemez. ",
-        "difficulty": 2,
-        "isSolved": false,
-        "isLocked": true
-    },
-    {
-        "id": 23,
+        "id": 21,
         "title": "Konuşmayan Papağan",
         "hint": "Bir kadın papağan satın almak ister. Satıcı kadına duyduğu her şeyi tekrar edeceğini garanti ettiği bir papağan satar. Birkaç gün sonra papağan hiçbir şeyi tekrar etmediği için kadın kendini dolandırılmış hisseder fakat dolandırılmamıştır.",
         "solution": "Papağan aslında sağırdır hiçbir şey duymadığı için hiçbir şey tekrar edemez. Dolayısıyla satıcı yalan söylememiştir.",
@@ -198,7 +181,7 @@
         "isLocked": false
     },
     {
-        "id": 24,
+        "id": 22,
         "title": "Otel Odası",
         "hint": "Bir adam ve kadın aynı oteldedir. Adam kadına bakarak tek gözünü kırpar ve kadın ölür",
         "solution": "Kaldıkları otel odalarının camları karşılıklıdır. Adam kadını öldürmek için oraya gelmiştir. Silahının dürbününden tek gözünü kırparak nişan alır ve kadını vurur.",
@@ -207,7 +190,7 @@
         "isLocked": false
     },
     {
-        "id": 25,
+        "id": 23,
         "title": "Satranç Kazananı",
         "hint": "İki adam satranç oynar. Kazanan kendini öldürür.",
         "solution": "Adamlar denizaltındadır ve denizaltı su almaya başlar. Ölecekleri kesindir. Bir tabanca ve tek bir kurşun vardır. İçlerinden birinin acısız ve hızlı ölmesi için satranç oynarlar. Kazanan kafasına sıkar, diğeri boğularak ölür.",
@@ -216,7 +199,7 @@
         "isLocked": false
     },
     {
-        "id": 26,
+        "id": 24,
         "title": "Paket ve Ceset",
         "hint": "Çölün ortasında bir ceset ve yanında duran bir paket bulunur.",
         "solution": "Uçaktan atlayan adamın paraşütü açılmaz ve paraşüt paketi ile birlikte düşerek ölür.",
@@ -225,7 +208,7 @@
         "isLocked": false
     },
     {
-        "id": 27,
+        "id": 25,
         "title": "Otel Odası",
         "hint": "Bir adam ve kadın aynı otelde kalırlar. Adam kadına bakarak bir gözünü kırpar ve kadın ölür.",
         "solution": "Adam ve kadının odalarının camları birbirine bakmaktadır. Adamın görevi kadını öldürmektir. Tek gözünü kırparak tüfeği ile kadına bakarak nişan alır ve kadını öldürür.",
@@ -234,7 +217,7 @@
         "isLocked": false
     },
     {
-        "id": 28,
+        "id": 26,
         "title": "Balo",
         "hint": "Bir adam büyük bir balo salonuna girer ve salonda bulunan herkesin ölmüş olduğunu görür fakat hiç şaşırmaz.",
         "solution": "Adam yıllar önce batmış olan bir gemiye dalış yapar. Geminin balo salonunda yolcuların iskeletleri hala durmaktadır.",
@@ -243,7 +226,7 @@
         "isLocked": false
     },
     {
-        "id": 29,
+        "id": 27,
         "title": "Son Av",
         "hint": "Bir avcı soğuk bir kış günü silahını hedefine doğru dikkatlice doğrultur. Ateş ettikten bir süre sonra kendisi ölür.",
         "solution": "Avcının avlandığı bölgede çığ riski çok yüksektir. Silahını ateşlediğinde çıkan yüksek ses çığa sebep olur ve avcı çığın altında kalarak ölür.",
