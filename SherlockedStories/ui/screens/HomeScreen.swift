@@ -50,6 +50,8 @@ struct AppBarView: View {
     let font = "BebasNeue-Regular"
     var title: String = "Sherlocked"
     var isVisible: Bool = true
+    var isKeyVisible: Bool = false
+    var keyCount: Int = 0
     var body: some View {
         HStack{
             Text(title)
@@ -57,6 +59,30 @@ struct AppBarView: View {
                 .padding()
                 .foregroundStyle(Color("BrandWhite"))
             Spacer()
+            
+            if isKeyVisible{
+                NavigationLink(destination: KeyDetailScreen()){
+                    HStack(spacing: 2){
+                        Image(systemName: "key.horizontal")
+                            .resizable()
+                            .frame(width: 32, height: 20)
+                            .foregroundStyle(Color("BrandWhite"))
+                            .cornerRadius(10)
+                            .padding(.leading, 5)
+                            .padding(.top, 5)
+                            .padding(.bottom, 5)
+                        Text("\(keyCount)")
+                            .fontWeight(.medium)
+                            .foregroundStyle(Color("BrandWhite"))
+                            .padding(.trailing, 5)
+                    }
+                    .background(Color.sherlockLightBrown)
+                    .cornerRadius(15)
+                    .padding()
+                }
+                
+            }
+            
             if isVisible{
                 NavigationLink(destination: SettingsScreen()){
                     Image(systemName: "gear")

@@ -15,7 +15,7 @@ struct StoriesScreen: View {
             ZStack{
                 Color("SherlockBrown").ignoresSafeArea()
                 VStack {
-                    AppBarView(title: "\(difficulty!) HİKAYELER", isVisible: false)
+                    AppBarView(title: "\(difficulty!) HİKAYELER", isVisible: false, isKeyVisible: true)
                         .padding(.bottom)
                     ScrollView{
                         VStack{
