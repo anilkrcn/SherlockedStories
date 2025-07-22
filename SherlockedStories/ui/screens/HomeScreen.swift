@@ -51,7 +51,7 @@ struct AppBarView: View {
     var title: String = "Sherlocked"
     var isVisible: Bool = true
     var isKeyVisible: Bool = false
-    var keyCount: Int = 0
+    @AppStorage("keyCount") var keyCount = 0
     var body: some View {
         HStack{
             Text(title)
