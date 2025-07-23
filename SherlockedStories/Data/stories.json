@@ -205,7 +205,7 @@
         "solution": "Adam ve kadının odalarının camları birbirine bakmaktadır. Adamın görevi kadını öldürmektir. Tek gözünü kırparak tüfeği ile kadına bakarak nişan alır ve kadını öldürür.",
         "difficulty": 3,
         "isSolved": false,
-        "isLocked": false
+        "isLocked": true
     },
     {
         "id": 26,
@@ -214,7 +214,7 @@
         "solution": "Adam yıllar önce batmış olan bir gemiye dalış yapar. Geminin balo salonunda yolcuların iskeletleri hala durmaktadır.",
         "difficulty": 2,
         "isSolved": false,
-        "isLocked": false
+        "isLocked": true
     },
     {
         "id": 27,
@@ -223,7 +223,7 @@
         "solution": "Avcının avlandığı bölgede çığ riski çok yüksektir. Silahını ateşlediğinde çıkan yüksek ses çığa sebep olur ve avcı çığın altında kalarak ölür.",
         "difficulty": 3,
         "isSolved": false,
-        "isLocked": false
+        "isLocked": true
     }
 ]
 
