@@ -8,6 +8,7 @@
 
 <img src="https://github.com/user-attachments/assets/e4f35c6a-3b75-4ce9-b340-fdcc992d9ca9" width="200" />
 <img src="https://github.com/user-attachments/assets/f8196d6f-889d-40e6-bc01-3c7be5aa6e7d" width="200" />
+
 ---
 
 ## 🧠 How to Play
