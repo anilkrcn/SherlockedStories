@@ -46,6 +46,11 @@ class StoryDetailViewModel: ObservableObject {
         saveContext()
     }
     
+    func unlocked(storyModel: StoryModel, isLocked: Bool){
+        storyModel.isLocked = isLocked
+        saveContext()
+    }
+    
     
 }
 

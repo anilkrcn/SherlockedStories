@@ -12,8 +12,9 @@ struct LockedStoryCard: View {
     var story = StoryModel()
     var adManager: AdManager
     var font = "BebasNeue-Regular"
+    @State var isLocked: Bool
     var color: String?
-    
+    @ObservedObject var viewModel = StoryDetailViewModel()
     @State private var navigate = false
     
     var body: some View {
@@ -36,9 +37,12 @@ struct LockedStoryCard: View {
                     if keyCount >= 1{
                         VStack{
                             Button("Kilidi Aç"){
-                                story.isLocked = false
-                                navigate = true
+                                isLocked = false
+                                viewModel.unlocked(storyModel: story, isLocked: isLocked)
                                 keyCount -= 1
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                               navigate = true
+                                           }
                             }.padding()
                                 .background(Color(color!))
                                 .border(Color("BrandWhite"), width: 2)
@@ -46,12 +50,14 @@ struct LockedStoryCard: View {
                                 .foregroundStyle(Color.white)
                                 .padding(.bottom, 10)
                             
-                            NavigationLink(
-                                destination: StoryDetailScreen(storyModel: story, color: color!),
-                                isActive: $navigate,
-                                label: {EmptyView()})
                         }
                     }
+                    
+                    NavigationLink(
+                        destination: StoryDetailScreen(storyModel: story, color: color!),
+                        isActive: $navigate,
+                        label: {EmptyView()}).hidden()
+                    
                     Button("Reklam İzle +1 Anahtar") {
                         if let rootVC = UIApplication.shared.windows.first?.rootViewController {
                             adManager.showAd(from: rootVC)

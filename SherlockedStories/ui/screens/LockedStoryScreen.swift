@@ -18,7 +18,7 @@ struct LockedStoryScreen: View {
             Color("SherlockBrown").ignoresSafeArea()
             VStack{
                 Spacer()
-                LockedStoryCard(story: storyModel, adManager: adManager, color: color!)
+                LockedStoryCard(story: storyModel, adManager: adManager, isLocked: true, color: color!)
                 Spacer()
             }
             
