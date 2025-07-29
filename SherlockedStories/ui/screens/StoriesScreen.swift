@@ -11,6 +11,9 @@ struct StoriesScreen: View {
     @ObservedObject var interstitialViewModel = InterstitialViewModel()
     //@State var adCounter: Int = 1
     @ObservedObject var viewModel = StoryDetailViewModel()
+    
+    var adManager =  AdManager()
+    
     var body: some View {
             ZStack{
                 Color("SherlockBrown").ignoresSafeArea()
