@@ -41,7 +41,8 @@
 - **JSON** – Story data loaded from structured JSON files  
 - **CoreData** – Local storage of story data  
 - **AppStorage** – Used to store onboarding completion state  
-
+- **GoogleAdMob** - Used Banner, Interstitial and Rewarded Ads
+  
 ---
 
 ## 🚀 Getting Started
