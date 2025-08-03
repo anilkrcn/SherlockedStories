@@ -3,7 +3,6 @@ import SwiftUI
 struct SettingsScreen: View {
     @State private var showOnboarding = false
     @Environment(\.openURL) var openURL
-
     var body: some View {
         NavigationView {
             ZStack{
@@ -34,6 +33,8 @@ struct SettingsScreen: View {
                                 })
                             ]
                         )
+                        
+                                
                     }
                     .padding()
                     .background(Color(.sherlockBrown)) // Form arka planı

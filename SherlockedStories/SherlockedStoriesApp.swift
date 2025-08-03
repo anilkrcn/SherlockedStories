@@ -17,6 +17,7 @@ struct SherlockedStoriesApp: App {
         AppTrackingManager.requestTrackingAuthorization()
         MobileAds.shared.start(completionHandler: nil)
         setupNavigationBarAppearance()
+        AudioManager.shared.playBackgroundMusic()
     }
     var body: some Scene {
         WindowGroup {

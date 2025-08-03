@@ -111,7 +111,7 @@
         "id": 14,
         "title": "AKŞAM YEMEĞİ",
         "hint": "Bir kadın ölür ama eğer akşam yemeği pişirmeseydi hayatta olurdu.",
-        "solution": "Kadın ormanlık bir alanda kamp yapmaktadır. Yemek pişirdiği sırada yemeği kokusu bir ayıyı kamp alanına çeker ve ayı kadını öldürür.",
+        "solution": "Kadın ormanlık bir alanda kamp yapmaktadır. Yemek pişirdiği sırada yemeğin kokusu bir ayıyı kamp alanına çeker ve ayı kadını öldürür.",
         "difficulty": 1,
         "isSolved": false,
         "isLocked": false

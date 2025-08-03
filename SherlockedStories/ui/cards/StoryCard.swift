@@ -86,10 +86,10 @@ struct StoryCardBackView: View{
                     HStack {
                         Text("Çözüm:  ")
                             .fontWeight(.bold)
-                            .font(.system(size: 13))
+                            .font(.system(size: 15))
                         + Text(story.solution!)
                             .fontWeight(.regular)
-                            .font(.system(size: 13))
+                            .font(.system(size: 15))
                     }.padding()
                     Spacer()
                     HStack {
