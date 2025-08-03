@@ -18,7 +18,7 @@ struct SettingsSectionView: View {
                             Text(items[index].title)
                                 .foregroundColor(.white)
                             Spacer()
-                            Image(systemName: "chevron.right")
+                            Image(systemName: items[index].image)
                                 .foregroundColor(.white.opacity(0.6))
                         }
                         .padding()

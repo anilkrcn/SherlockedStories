@@ -9,4 +9,5 @@
 struct SettingsButton {
     let title: String
     let action: () -> Void
+    var image: String = "chevron.right"
 }

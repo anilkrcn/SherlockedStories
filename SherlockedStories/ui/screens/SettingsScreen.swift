@@ -3,6 +3,8 @@ import SwiftUI
 struct SettingsScreen: View {
     @State private var showOnboarding = false
     @Environment(\.openURL) var openURL
+    @ObservedObject var audioManager = AudioManager.shared
+    
     var body: some View {
         NavigationView {
             ZStack{
@@ -17,7 +19,10 @@ struct SettingsScreen: View {
                         SettingsSectionView(
                             title: "Yardım",
                             items: [
-                                SettingsButton(title: "Nasıl Oynanır?", action: { showOnboarding = true })
+                                SettingsButton(title: "Nasıl Oynanır?", action: { showOnboarding = true }),
+                                SettingsButton(title: "Müzik", action: {
+                                    audioManager.isMuted.toggle()
+                                }, image: audioManager.isMuted ? "speaker.slash.fill" : "speaker.wave.2.fill")
                             ]
                         )
                         
